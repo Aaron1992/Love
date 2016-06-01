@@ -20,17 +20,20 @@
 		<div id="content">
 			<div id="code">
 				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
+				<span class="space"/><span class="comments">* I am a USTC programmer, and U are from SHMTU.</span><br />
+				<span class="space"/><span class="comments">* I met you and fall in deep love in you.</span><br />
 				<span class="space"/><span class="comments">*/</span><br />
 				Boy i = <span class="keyword">new</span> Boy(<span class="string">"Aaron"</span>);<br />
 				Girl u = <span class="keyword">new</span> Girl(<span class="string">"Tina"</span>);<br />
-				<span class="comments">// June 1, 2016, I told you I love you. </span><br />
+				Couple we = <span class="keyword">new</span> Couple(<span class="string">u, i</span>);<br />
+				<span class="comments">// Before June 1, 2016, I loved you in my way. </span><br />
 				i.love(u);<br />
-				<span class="comments">// You didn't accept me, but it didn't change my mind.</span><br />
-				u.accepted();<br />
-				<span class="comments">// From then on, I will do my best to express my love.</span><br />
+				<span class="comments">// You didn't accept me then, but it didn't change my mind.</span><br />
+				u.setAccepted(false);<br />
+				<span class="comments">// But from now on, I will do my best to express my love.</span><br />
 				i.miss(u);<br />
+				<span class="comments">// I will do my best to make a better life and future in Shenzhen.</span><br />
+				i.fightIn("Shenzhen");<br />
 				<span class="comments">// And take care of u and our love.</span><br />
 				i.takeCareOf(u);<br />
 				<span class="comments">// It won't be so easy to make you accept me.</span><br />
@@ -38,38 +41,38 @@
 				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
 				<span class="keyword">while</span> (isHesitate) {<br />
 				<span class="placeholder"/>i.waitFor(u);<br />
+				<span class="placeholder"/>i.loveTo(u).increase();<br />
 				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
 				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
 				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
 				}<br />
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
-				i.marry(u);<br />
-				i.liveHappilyWith(u);<br />
+				<span class="comments">// Time will see it. I make my promise that I will make you the happiest girl in the world.</span><br />
+				i.setHppiest(u);<br />
+				we.toBeContinued();<br />
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						Minyue, I have fallen in love with you for
+						Tina, I have fallen in love with you for
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
 						Love u forever and ever.<br/>
-						<div class="signature">- hackerzhou</div>
+						<div class="signature">- Aaron</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="copyright">
-			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2011 <a href='http://hackerzhou.me'>hackerzhou.me</a> 2009-2011
+			Copyright © 2016 <a href='http://xin1.me'>love-tina.com</a> 2016-
 		</div>
 	</div>
 	<script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date();
-		together.setFullYear(2016, 6, 1);
+		together.setFullYear(2016, 5, 1);
 		together.setHours(10);
 		together.setMinutes(10);
 		together.setSeconds(0);
